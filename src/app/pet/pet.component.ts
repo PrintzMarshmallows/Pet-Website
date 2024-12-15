@@ -20,8 +20,18 @@ import { RouterLink, Router } from '@angular/router';
       <section class="listing-info-container"> 
         <ul class="listing-info">
           <li> Name: {{ animalDetails?.animalName }} </li>
-          <li> Age: {{ animalDetails?.age }}</li>
-          <li>  </li>
+          <li> Age: {{ animalDetails?.age }} </li>
+          <li> Sex: {{ animalDetails?.gender }} </li>
+          <li> 
+            {{ animalDetails?.gender === 'Male' ? 'Neutered:' : 'Spayed:' }} {{ animalDetails?.neuteredSpayed ? 'Yes' : 'No' }}
+          </li>
+
+          <br>
+          
+          <li> Adoption Fee: {{'$' + animalDetails?.adoptionFee }} </li>
+          <li> Seller: {{ animalDetails?.sellerName }} </li>
+          <li> Address: {{ animalDetails?.address }} </li>
+          <li> Location: {{ animalDetails?.city + ', ' + animalDetails?.country }} </li> 
         </ul>
 
         <p id="info"> {{ animalDetails?.info }} </p>

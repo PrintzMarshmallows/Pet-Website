@@ -4,6 +4,7 @@ import { PetComponent } from './pet/pet.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AboutComponent } from './about/about.component';
 
 const routeConfig: Routes = [
     {
@@ -30,6 +31,11 @@ const routeConfig: Routes = [
         path: 'checkout',
         component: CheckoutComponent,
         title: 'Checkout'
+    },
+    {
+        path: 'about',
+        component: AboutComponent,
+        title: 'About Us'
     }
 ];
 
