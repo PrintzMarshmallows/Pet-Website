@@ -8,7 +8,7 @@ import { RouterLink, RouterOutlet} from '@angular/router';
   standalone: true,
   imports: [RouterLink, CommonModule, RouterOutlet],
   template: `
-  <a [routerLink]="['/pet', animalDetails.id]" target="_blank">
+  <a [routerLink]="['/pet', animalDetails.id]">
     <section class="listing"> 
         <img 
           class="listing-photo"

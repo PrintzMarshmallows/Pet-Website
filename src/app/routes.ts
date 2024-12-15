@@ -1,8 +1,9 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PetComponent } from './pet/pet.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routeConfig: Routes = [
     {
@@ -20,6 +21,16 @@ const routeConfig: Routes = [
         component: LoginComponent,
         title: 'Login',
     },
+    {
+        path: 'register',
+        component: RegisterComponent,
+        title: 'Register'
+    },
+    {
+        path: 'checkout',
+        component: CheckoutComponent,
+        title: 'Checkout'
+    }
 ];
 
 export default routeConfig;

@@ -1,4 +1,4 @@
-.login-container {
+.form-container {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -11,7 +11,7 @@
     justify-content: center;
     margin-top: 20px;
 }
-.login-container h1 {
+.form-container h1 {
     margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
@@ -24,7 +24,8 @@
     margin-bottom: 5px;
     font-weight: bold;
 }
-.form-group input {
+
+input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -33,6 +34,7 @@
     padding-right: 1px;
     padding-left: 3px;
 }
+
 .form-group button {
     width: 100%;
     padding: 10px;
@@ -43,6 +45,7 @@
     font-size: 16px;
     cursor: pointer;
 }
+
 .form-group button:hover {
     background-color: #0056b3;
 }
@@ -55,10 +58,12 @@
     text-align: center;
     margin-top: 15px;
 }
+
 .form-footer a {
     color: #007BFF;
     text-decoration: none;
 }
+
 .form-footer a:hover {
     text-decoration: underline;
 }
